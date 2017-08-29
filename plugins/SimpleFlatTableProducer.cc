@@ -136,7 +136,9 @@ class EventSingletonSimpleFlatTableProducer : public SimpleFlatTableProducerBase
 
 #include "DataFormats/Candidate/interface/Candidate.h"
 typedef SimpleFlatTableProducer<reco::Candidate> SimpleCandidateFlatTableProducer;
+typedef SimpleFlatTableProducer<uint8_t> SimpleUInt8FlatTableProducer;
 
 #include "FWCore/Framework/interface/MakerMacros.h"
 DEFINE_FWK_MODULE(SimpleCandidateFlatTableProducer);
+DEFINE_FWK_MODULE(SimpleUInt8FlatTableProducer);
 
